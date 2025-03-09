@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" href="./images/image.png">
+    <link rel="icon" href="./images/logo4.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -21,14 +21,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="./images/image.png" alt=""></a>
+        <a href="#" class="logo">
+            <img src="./images/logo4.png" alt="" style="width: 70px; height: auto;">
+        </a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#service">services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#Training">Training</a></li>
                 <li><a href="#team">team</a></li>
                 <li><a href="careers.html">career</a></li>
                 <li><a href="#contact">contact</a></li>
@@ -367,22 +369,59 @@
 </div>
 
 
+<!-- IT Trainings Section -->
 <div class="clients mt-100">
     <div class="container">
         <div class="section-header">
-            <h2>Our Clients</h2>
+            <h2>IT Trainings</h2>
             <p>
-                We don't just build softwares, we build your business.
+                Future-Ready IT Training for Students & Professionals.
             </p>
         </div>
         <div class="owl-carousel clients-carousel">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
+            <div class="training-logo">
+                <i class="devicon-docker-plain colored"></i>
+                <p>DevOps Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="fab fa-aws colored"></i>
+                <p>AWS Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="fas fa-brain colored"></i>
+                <p>Generative AI Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="fas fa-laptop-code colored"></i>
+                <p>Full Stack Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="fas fa-chart-line colored"></i>
+                <p>Data Science Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="devicon-salesforce-plain colored"></i>
+                <p>Salesforce Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="devicon-googlecloud-plain colored"></i>
+                <p>GCP Training</p>
+            </div>
+            <div class="training-logo">
+                <i class="fab fa-microsoft colored"></i>
+                <p>Azure Training</p>
+            </div>
         </div>
     </div>
 </div>
+
 <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+<!-- Include FontAwesome & Devicon for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+
+<!-- Scripts -->
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -391,6 +430,22 @@
 <script src="lib/counterup/counterup.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Custom CSS -->
+<style>
+    .training-logo {
+        text-align: center;
+        font-size: 50px;
+        color: #007bff;
+        margin: 20px;
+    }
+    .training-logo p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
+
 
 <section class="team" style="margin-top: 7rem;">
   <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
@@ -562,7 +617,7 @@
                   <div class="col-lg-3 col-md-6 footer-links">
                       <h4>Useful Links</h4>
                       <ul>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#Training">Training</a></li>
                           <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
                           <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
                           <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
@@ -577,7 +632,7 @@
                           Dehradun, Uk<br>
                           India <br>
                           <strong>Phone:</strong> +91-7017-931010<br>
-                          <strong>Email:</strong> Contact@DoonOps.com<br>
+                          <strong>Email:</strong> info-admin@DoonOps.com<br>
                       </p>
 
                       <div class="social-links">
