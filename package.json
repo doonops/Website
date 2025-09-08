@@ -1,5 +1,5 @@
 {
-  "name": "doonops-react",
+  "name": "Website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "dev:5174": "vite --port 5174 --host --strictPort",
     "build": "vite build",
-    "postbuild": "cp dist/index.html dist/404.html",  // 👈 SPA fallback
+    "postbuild": "cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview:5174": "vite preview --port 5174 --strictPort"
