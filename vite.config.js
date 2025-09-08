@@ -4,8 +4,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // IMPORTANT: base ko '/' rakho (ya hata do). '/Website/' bilkul mat use karo.
+  // Custom domain (https://doonops.com):
   base: '/',
-  server: { port: 5174, strictPort: true, host: true, open: false },
-  preview: { port: 5174, strictPort: true },
+  // Agar GitHub Pages project path hota to: base: '/<repo-name>/'
 })
