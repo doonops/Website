@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" fill="none">
+  <g opacity="0.95">
+    <circle cx="26" cy="20" r="12" stroke="white" stroke-width="4" fill="none"/>
+    <circle cx="26" cy="20" r="4" fill="white"/>
+    <text x="50" y="26" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18" fill="white">Google Cloud</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" fill="none">
+  <g opacity="0.95" fill="white">
+    <path d="M18 28 L26 8 L34 28 Z"/>
+    <rect x="21" y="22" width="14" height="2" />
+    <text x="50" y="26" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18">Azure</text>
+  </g>
+</svg>

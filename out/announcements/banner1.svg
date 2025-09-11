@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7a5cff"/>
+      <stop offset="100%" stop-color="#33d1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#g1)" opacity="0.3"/>
+  <g fill="none" stroke="#ffffff" opacity="0.15">
+    <path d="M0 420 C 200 380, 400 440, 600 400 S 1000 360, 1200 400 S 1400 460, 1600 420"/>
+    <path d="M0 300 C 250 260, 500 320, 750 280 S 1250 240, 1600 300"/>
+  </g>
+  <text x="80" y="120" font-family="Inter, Arial" font-weight="700" font-size="64" fill="#ffffff">Doonops AI Starter</text>
+  <text x="80" y="180" font-family="Inter, Arial" font-size="28" fill="#e8e8ef" opacity="0.9">Prebuilt chat, RAG, analytics components</text>
+</svg>

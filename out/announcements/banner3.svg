@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a5cff"/>
+      <stop offset="100%" stop-color="#111117"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#g3)" opacity="0.35"/>
+  <g stroke="#ffffff" stroke-opacity="0.15">
+    <path d="M0 250 L1600 250"/>
+    <path d="M0 350 L1600 350"/>
+  </g>
+  <text x="80" y="120" font-family="Inter, Arial" font-weight="700" font-size="64" fill="#ffffff">HCM Suite v2.1</text>
+  <text x="80" y="180" font-family="Inter, Arial" font-size="28" fill="#e8e8ef" opacity="0.9">Payroll automation, rules, SSO integration</text>
+</svg>
