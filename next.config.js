@@ -1,14 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Generate a fully static export suitable for GitHub Pages
   output: 'export',
-  // If you deploy to https://<user>.github.io/<repo>/ then uncomment below and set to '/<repo>'
-  // basePath: '/REPO_NAME',
-  // assetPrefix: '/REPO_NAME/',
   images: { unoptimized: true },
-  // Optional: add trailing slash for simpler static hosting
   trailingSlash: true,
+
+  // Stop dev reload loop: ignore built folders (docs/, out/) from file watcher
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        ignored: [
+          '**/node_modules/**',
+          '**/.git/**',
+          '**/.next/**',
+          '**/out/**',
+          '**/docs/**',
+          '**/dist/**',
+        ],
+        aggregateTimeout: 300,
+      }
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig

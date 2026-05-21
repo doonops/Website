@@ -3,12 +3,12 @@ import Layout from '@/components/Layout'
 import { FormEvent, useRef, useState } from 'react'
 
 const roles = [
+  'AI/ML Engineer (EdTech)',
   'Full‑Stack Engineer',
-  'Mobile Engineer (iOS/Android)',
-  'DevOps Engineer',
-  'AI/ML Engineer',
-  'QA Automation Engineer',
-  'Product Manager',
+  'EdTech Content Creator',
+  'Assessment & Test Platform Engineer',
+  'Product Manager — EdTech',
+  'Customer Success — Institutes',
 ]
 
 export default function Careers() {
@@ -37,16 +37,16 @@ export default function Careers() {
   return (
     <Layout>
       <Head>
-        <title>Careers — Doonops</title>
-        <meta name="description" content="Join Doonops to build delightful, reliable software at scale." />
+        <title>Careers — Doonops AI</title>
+        <meta name="description" content="Join Doonops to build autonomous AI platforms and enterprise software." />
       </Head>
 
-      <section className="section hero hero-compact">
+      <section className="section hero hero-compact hero-static">
         <div className="container hero-inner">
-          <h1 className="hero-title">Careers at Doonops</h1>
-          <p className="hero-subtitle">Build bold products with a team that cares about craft, reliability, and impact.</p>
+          <h1 className="hero-title"><span className="gradient">Careers at Doonops AI</span></h1>
+          <p className="hero-subtitle">Build AI EdTech products with a team obsessed with craft, reliability, and impact.</p>
         </div>
-        <div className="hero-bg" aria-hidden="true"></div>
+        <div className="hero-bg" aria-hidden="true" />
       </section>
 
       <section id="roles" className="section">
@@ -57,12 +57,12 @@ export default function Careers() {
               <article key={r} className="card job">
                 <h3>{r}</h3>
                 <p>
-                  {r.includes('Full‑Stack') && 'TypeScript/Node, React or Vue, REST/GraphQL, cloud fundamentals.'}
-                  {r.includes('Mobile') && 'Swift/Kotlin or React Native/Flutter, testing, store releases.'}
-                  {r.includes('DevOps') && 'CI/CD, Docker/Kubernetes, IaC (Terraform), observability and SRE.'}
-                  {r.includes('AI/ML') && 'LLMs, vector search, MLOps, model evaluation and deployment.'}
-                  {r.includes('QA') && 'E2E frameworks, test strategy, performance and reliability engineering.'}
-                  {r.includes('Product Manager') && 'Discovery, roadmaps, analytics, and cross‑functional leadership.'}
+                  {r.includes('AI/ML') && 'LLMs, RAG, voice AI, adaptive learning models for tutors & assessments.'}
+                  {r.includes('Full‑Stack') && 'Next.js, Node, real-time dashboards, proctoring & exam platforms.'}
+                  {r.includes('Content') && 'Exam syllabi, question banks, video scripts for govt & aptitude prep.'}
+                  {r.includes('Assessment') && 'Online test engines, auto-grading, analytics, anti-cheat systems.'}
+                  {r.includes('Product Manager') && 'EdTech roadmaps, B2B institutes, student growth metrics.'}
+                  {r.includes('Customer Success') && 'Onboarding schools/coaching centers, training, renewals.'}
                 </p>
                 <button className="btn btn-secondary" onClick={() => applyFor(r)}>Apply</button>
               </article>
