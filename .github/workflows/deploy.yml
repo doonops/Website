@@ -1,27 +1,49 @@
-name: Deploy static site to public repo
+name: Deploy to doonops.com
+
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions: {}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: false
+
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
+        with:
+          node-version: '20'
+          cache: npm
+
       - run: npm ci
       - run: npm run build
-      # publish "dist" to another repo (Repo B)
-      - name: Deploy to public pages repo
+
+      # Path A: doonops.com via doonops.github.io (optional — needs PAGES_DEPLOY_KEY)
+      - name: Deploy to doonops.github.io
         uses: peaceiris/actions-gh-pages@v3
+        continue-on-error: true
         with:
-          publish_dir: out
-          external_repository: doonops/doonops.github.io   # <-- Repo B
-          publish_branch: main                              # or gh-pages
-          cname: doonops.com                                # CNAME file auto
-          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}       # repo deploy key
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          external_repository: doonops/doonops.github.io
+          publish_branch: main
+          publish_dir: ./out
+          cname: doonops.com
+          force_orphan: true
+
+      # Path B: update docs/ for GitHub Pages "source = /docs"
+      - run: node scripts/sync-docs.mjs
+
+      - name: Commit updated docs/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --staged --quiet; then
+            echo "docs/ already up to date"
+          else
+            git commit -m "chore: sync docs/ for GitHub Pages"
+            git push
+          fi

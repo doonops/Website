@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev:clean": "rm -rf .next && next dev",
     "build": "next build",
+    "build:docs": "npm run build && node scripts/sync-docs.mjs",
     "start": "next start",
     "preview": "npx serve out"
   },
