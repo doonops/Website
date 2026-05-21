@@ -9,6 +9,8 @@
 
 Code push karne se `docs/` **automatic update nahi hota** — build copy alag step hai.
 
+**Plain text / broken site?** Agar HTML update ho lekin CSS na aaye, check karo `docs/_next/` git mein hai ya nahi. Pehle `docs/` `.gitignore` mein tha — sirf purani tracked files push hoti thi, nayi CSS 404 deti thi. Ab `docs/` ignore nahi hai; `npm run build:docs` ke baad `git add -A docs/` zaroor karo.
+
 ## doonops.com — 2 possible setups
 
 ### Setup 1: GitHub Pages → **/docs** folder (Website repo)
