@@ -8,7 +8,9 @@
     "build": "next build",
     "build:docs": "npm run build && node scripts/sync-docs.mjs",
     "start": "next start",
-    "preview": "npx serve out"
+    "preview": "npx serve out",
+    "generate:bootcamp": "node scripts/parse-python-bootcamp.mjs",
+    "generate:terraform": "node scripts/generate-terraform-course.mjs"
   },
   "dependencies": {
     "next": "^14.2.5",

@@ -24,5 +24,8 @@ pnpm-debug.log*
 .env
 .env.*
 
-node_modules/
-.next/
+# Reference repos (content lives in data/*.json + scripts/)
+terraform-on-aws-ec2/
+terraform-on-aws-eks/
+hashicorp-certified-terraform-associate/
+Complete-Python-Bootcamp/

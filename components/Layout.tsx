@@ -7,7 +7,8 @@ const NAV_LINKS = [
   { href: '/#products', label: 'Products' },
   { href: '/#exams', label: 'Exams' },
   { href: '/#trending', label: 'Features' },
-  { href: '/careers', label: 'Careers' },
+  { href: '/tutorials/', label: 'Tutorials' },
+  { href: '/careers/', label: 'Careers' },
 ]
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -102,7 +103,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <a href="/#products">Products</a>
             <a href="/#exams">Exams</a>
             <a href="/#trending">Features</a>
-            <Link href="/careers">Careers</Link>
+            <Link href="/tutorials/">Tutorials</Link>
+            <Link href="/careers/">Careers</Link>
             <a href="/#contact">Contact</a>
           </nav>
         </div>
