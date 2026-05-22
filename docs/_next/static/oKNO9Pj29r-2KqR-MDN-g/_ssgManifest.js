@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Ftutorials\u002Fpython-bootcamp\u002F[slug]","\u002Ftutorials\u002Fterraform-aws\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
